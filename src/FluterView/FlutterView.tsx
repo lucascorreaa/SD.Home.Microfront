@@ -4,9 +4,8 @@ import React, { useEffect, useRef, memo } from 'react';
 declare var _flutter: any;
 
 const divStyle: React.CSSProperties = {
-  height: '80%',
+  height: '90%',
   width: '80%',
-  marginTop: '200px',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center', // Centraliza verticalmente

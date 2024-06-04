@@ -1,25 +1,23 @@
-import React, { useState } from 'react';
-import { FlutterView } from './FluterView/FlutterView';
+import React from 'react'
+import { FlutterView } from './FluterView/FlutterView'
 
 export default function Root() {
-  const [classNames, setClassNames] = useState('');
-  const [screen, setScreen] = useState('counter');
-  const [clicks, setClicks] = useState(0);
-  const [text, setText] = useState('');
+  const [screen, setScreen] = React.useState('counter')
+  const [clicks, setClicks] = React.useState(0)
+  const [text, setText] = React.useState('')
 
   return (
-    <div className={classNames}>
-      <FlutterView
-        assetBase="https://conecta-microfronts-qas.telemedicinaeinstein.com.br/flutter-main-web/"
-        src="https://conecta-microfronts-qas.telemedicinaeinstein.com.br/flutter-main-web/main.dart.js"
-        onClicksChange={setClicks}
-        onScreenChange={setScreen}
-        onTextChange={setText}
-        text={text}
-        clicks={clicks}
-        screen={screen}
-      />
-    </div>
-  );
+      <div style={{width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <FlutterView
+            assetBase="https://conecta-microfronts-qas.telemedicinaeinstein.com.br/flutter-main-web/"
+            src="https://conecta-microfronts-qas.telemedicinaeinstein.com.br/flutter-main-web/main.dart.js"
+            onClicksChange={setClicks}
+            onScreenChange={setScreen}
+            onTextChange={setText}
+            text={text}
+            clicks={clicks}
+            screen={screen}
+          />
+        </div>
+  )
 }
-
