@@ -3,9 +3,9 @@
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
-    "build": "concurrently yarn:build:*",
-    "build:webpack": "webpack --mode=production",
-    "analyze": "webpack --mode=production --env analyze",
+    "build": "concurrently \"yarn build:webpack\" \"yarn build:types\"",
+    "build:webpack": "webpack --mode production",
+    "analyze": "webpack --mode production --env analyze",
     "lint": "eslint src --ext js,ts,tsx",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
