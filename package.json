@@ -45,11 +45,7 @@
     "typescript": "^4.3.5",
     "webpack-config-single-spa-ts": "^4.0.0",
     "ts-config-single-spa": "^3.0.0",
-    "eslint-config-ts-react-important-stuff": "^3.0.0",
-    "webpack-config-single-spa-react-ts": "^4.0.0",
-    "@babel/plugin-proposal-private-property-in-object": "7.21.0",
-    "ncp": "^2.0.0",
-    "rimraf": "^5.0.1"
+    "eslint-config-ts-react-important-stuff": "^3.0.0"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -58,13 +54,7 @@
     "@types/jest": "^27.0.1",
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
-    "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9",
-    "@types/node": "^16.7.13",
-    "single-spa": "^5.9.3",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
+    "@types/react": "^17.0.19"
   },
   "types": "dist/suporte-de-domingo-Home.d.ts"
 }
